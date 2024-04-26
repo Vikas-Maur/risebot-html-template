@@ -190,3 +190,14 @@
         opacity: 1;
     }
 }
+
+#main-nav .menu-item-mega-nav .sub-menu {
+    width: 100%;
+    top: 110%;
+    
+}
+
+#main-nav .menu-item-mega-nav .sub-menu a{
+    padding: 0;
+    color: $txt-color;
+}

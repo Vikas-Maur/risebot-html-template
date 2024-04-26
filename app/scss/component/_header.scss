@@ -21,14 +21,15 @@
         }
     }
     .main-nav {
-        position: absolute;
-        left: 37%;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
+        // // position: absolute;
+        // // left: 37%;
+        // // top: 50%;
+        // -webkit-transform: translateY(-50%);
+        // -ms-transform: translateY(-50%);
+        // -o-transform: translateY(-50%);
+        // transform: translateY(-50%);
         padding-left: 10px;
+        margin-left: auto;
     }
 } 
 
@@ -143,4 +144,13 @@
     border-left: 16px solid transparent;
     border-right: 16px solid transparent;
     border-bottom: 16px solid #190d40 !important;
+}
+
+// MEGA NAV
+.menu-item-mega-nav{
+    position: initial !important;
+}
+
+#site-header-inner{
+    position: relative;
 }
