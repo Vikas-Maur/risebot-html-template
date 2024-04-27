@@ -12,6 +12,60 @@
     font-display: block;
 } 
 
+$vignette-color: rgba(0,0,0,0.5) !default;
+$vignette-blur-radius: 40px !default;
+$vignette-spread-radius: 20px !default;
+
+$vignette-small-blur-radius: 30px !default;
+$vignette-small-spread-radius: 20px !default;
+
+$vignette-large-blur-radius: 80px !default;
+$vignette-large-spread-radius: 50px !default;
+
+
+.vignette {
+    position: relative;
+    display: inline-block;
+    color: white;
+
+    &:after {
+      content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-collapse: separate;
+    box-shadow: inset 0 0 $vignette-blur-radius $vignette-spread-radius $vignette-color;
+    }
+
+
+    &.vignette-small:after {
+    box-shadow: inset 0 0 $vignette-small-blur-radius $vignette-small-spread-radius $vignette-color;
+    }
+
+    &.vignette-large:after {
+    box-shadow: inset 0 0 $vignette-large-blur-radius $vignette-large-spread-radius $vignette-color;
+    }
+}
+
+// Colored panel
+.panel {
+  background-color: blue;
+  padding: 1em;
+  color: white;
+  
+  .faded {
+    color: blue;
+  }
+}
+
+// Scale images down if they're too large for available space
+img {
+  max-width: 100%;
+}
+
 
 html {
     margin-right: 0 !important;
@@ -650,3 +704,4 @@ form {
         transform: rotate(360deg);
     }
 }
+
