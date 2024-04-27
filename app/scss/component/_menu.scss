@@ -201,3 +201,25 @@
     padding: 0;
     color: $txt-color;
 }
+
+#main-nav-mobi .menu-item-mega-nav.large-menu {
+    display: none !important;
+}
+
+#main-nav-mobi .menu-item-mega-nav.small-menu .sub-menu{
+    padding-left: 40px;
+}
+
+#main-nav-mobi .menu-item-mega-nav.small-menu .sub-menu a{
+    padding-left: 0;
+    color: $txt-color;
+}
+
+@media (min-width: 993px) {
+    #main-nav .menu-item-mega-nav.small-menu {
+        display: none !important;
+    }
+    #main-nav .menu-item-mega-nav.large-menu {
+        display: block !important;
+    }
+}

@@ -43,3 +43,18 @@ $res_767: 767px;
 $res_600: 600px;
 $res_500: 500px;
 $res_400: 500px;
+
+// colors
+
+$colors: (
+    accent: #86FF00,
+);
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+}

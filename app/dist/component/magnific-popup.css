@@ -1,3 +1,11 @@
+.bg-accent {
+  background-color: #86FF00;
+}
+
+.text-accent {
+  color: #86FF00;
+}
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
